@@ -1,0 +1,13 @@
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/CMakeFiles/install/local.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/CMakeFiles/install/strip.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/CMakeFiles/install.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/CMakeFiles/list_install_components.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/CMakeFiles/rebuild_cache.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/CMakeFiles/edit_cache.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/bin/CMakeFiles/install/local.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/bin/CMakeFiles/rebuild_cache.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/bin/CMakeFiles/edit_cache.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/bin/CMakeFiles/install/strip.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/bin/CMakeFiles/install.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/bin/CMakeFiles/list_install_components.dir
+/Users/gavin/Documents/CMake-Practice-zh-CN/cmake/t2/build/bin/CMakeFiles/hello.dir

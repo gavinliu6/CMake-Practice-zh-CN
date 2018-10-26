@@ -1,0 +1,11 @@
+* [前言](foreword)
+* [一、初识 cmake](acquaintance)
+* [二、安装 cmake](install)
+* [三、初试 cmake – cmake 的 helloworld](hello-world)
+* [四、更好一点的 Hello World](better-hello-world)
+* [五、静态库和动态库的构建](static-and-dynamic.md)
+* [六、如何使用外部共享库和头文件](the-use-of-lib-and-header-file)
+* [七、cmake 常用变量和常用环境变量](common-var)
+* [八、cmake 常用指令](common-directives)
+* [九、复杂的例子:模块的使用和自定义模块](module)
+
