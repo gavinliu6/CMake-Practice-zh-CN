@@ -44,6 +44,8 @@ int main()
 
 这段代码的作用是通过 curl 取回 www.linux-ren.org 的首页并写入 `/tmp/curl-test` 文件中。
 
+?> @Gavin注：原书中的 www.linux-ren.org 会产生301重定向，建议换成其他，比如：https://www.baidu.com
+
 建立主工程文件 `CMakeLists.txt`：
 
 ```
