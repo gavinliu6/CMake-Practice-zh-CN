@@ -274,7 +274,8 @@ ENDIF(NOT libX)
 
    ```
    IF(WIN32)
-   #do something related to WIN32 ELSEIF(UNIX)
+   #do something related to WIN32 
+   ELSEIF(UNIX)
    #do something related to UNIX
    ELSEIF(APPLE)
    #do something related to APPLE
