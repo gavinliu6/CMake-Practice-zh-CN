@@ -35,7 +35,7 @@ int main()
     CURLcode res;
     CURL *curl = curl_easy_init();
     curl_easy_setopt(curl, CURLOPT_URL, "http://www.linux-ren.org");
-            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
     curl_easy_setopt(curl, CURLOPT_VERBOSE, 1);
     res = curl_easy_perform(curl);
     curl_easy_cleanup(curl);
@@ -43,6 +43,8 @@ int main()
 ```
 
 这段代码的作用是通过 curl 取回 www.linux-ren.org 的首页并写入 `/tmp/curl-test` 文件中。
+
+?> @Gavin注：原书中的 www.linux-ren.org 会产生301重定向，建议换成其他，比如：https://www.baidu.com
 
 建立主工程文件 `CMakeLists.txt`：
 
@@ -137,22 +139,20 @@ ADD_EXECUTABLE(viewer ${mySources} ${optionalSources} ) TARGET_LINK_LIBRARIES(vi
 1. 定义 `cmake/FindHELLO.cmake` 模块
 
 ```
-FIND_PATH(HELLO_INCLUDE_DIR hello.h /usr/include/hello
-/usr/local/include/hello)
-FIND_LIBRARY(HELLO_LIBRARY NAMES hello PATH /usr/lib
-/usr/local/lib)
-IF (HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
+FIND_PATH(HELLO_INCLUDE_DIR hello.h /usr/include/hello /usr/local/include/hello)
+FIND_LIBRARY(HELLO_LIBRARY NAMES hello PATH /usr/lib /usr/local/lib)
+IF(HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
    SET(HELLO_FOUND TRUE)
-ENDIF (HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
-IF (HELLO_FOUND)
-   IF (NOT HELLO_FIND_QUIETLY)
-      MESSAGE(STATUS "Found Hello: ${HELLO_LIBRARY}")
-      ENDIF (NOT HELLO_FIND_QUIETLY)
-ELSE (HELLO_FOUND)
-   IF (HELLO_FIND_REQUIRED)
+ENDIF(HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
+IF(HELLO_FOUND)
+   IF(NOT HELLO_FIND_QUIETLY)
+       MESSAGE(STATUS "Found Hello: ${HELLO_LIBRARY}")
+   ENDIF(NOT HELLO_FIND_QUIETLY)
+ELSE(HELLO_FOUND)
+   IF(HELLO_FIND_REQUIRED)
       MESSAGE(FATAL_ERROR "Could not find hello library")
-   ENDIF (HELLO_FIND_REQUIRED)
-ENDIF (HELLO_FOUND)
+   ENDIF(HELLO_FIND_REQUIRED)
+ENDIF(HELLO_FOUND)
 ```
 
 针对上面的模块让我们再来回顾一下 `FIND_PACKAGE` 指令：
