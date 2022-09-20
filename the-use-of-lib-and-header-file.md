@@ -179,7 +179,7 @@ export CMAKE_INCLUDE_PATH=/usr/include/hello
 ```c
 FIND_PATH(myHeader hello.h)
 IF(myHeader)
-INCLUDE_DIRECTORY(${myHeader})
+INCLUDE_DIRECTORIES(${myHeader})
 ENDIF(myHeader)
 ```
 
